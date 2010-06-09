@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+.sMenuSlider {
+	width: 960px;
+	margin: 0px auto;
+}
+
+/* Banner
+----------------------------------------------------------------------------------------------------*/
+
+.sMenu-sombra {
+	width: 960px;
+	height: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(../imagens/banner/sombra-banner.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	clear:both;
+}
+
+.bigSlideText {
+	opacity: 1;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: 300px; 
+	padding: 10px;
+}
+
+.placeHolder {
+	position: absolute; 
+	display: block; 
+	left: 10px; 
+	width: 300px; 
+	opacity: 0.8; 
+	padding: 10px; 
+	bottom: 10px;
+	background: #333;
+}
+
+/* Banner - Imagens
+----------------------------------------------------------------------------------------------------*/
+ul.sMenu-banner {
+	width: 650px;
+	height: 270px;
+	float: left;
+	overflow: hidden;
+	background:#000;
+	position:relative;
+}
+
+ul.sMenu-banner img {
+	border: none;
+}
+
+.sMenu-banner li {
+	position:absolute;
+	color: #fff;
+	font-size: 14px;
+	line-height:14px;
+}
+
+.sMenu-banner h1, 
+.sMenu-banner h2,
+.sMenu-banner h3, 
+.sMenu-banner h4,
+.sMenu-banner h5, 
+.sMenu-banner h6 {
+	font-size:18px;
+	margin-bottom:5px;
+	line-height:20px;
+}
+
+.sMenu-banner a {
+	text-decoration: none;	
+	color: #f5cc00;
+}
+
+/* Navegacao - Menu de imagens
+----------------------------------------------------------------------------------------------------*/
+.sMenu-navegacao {
+	width: 310px;
+	height: 270px;
+	float: right;
+	overflow: hidden;
+	background-color: #999;
+	position:relative;
+}
+
+.sMenu-navegacao ul {
+	position:absolute;
+	top: 0;
+}
+
+.sMenu-navegacao li {
+	height: 80px;
+	display: block;
+	padding: 4px 20px;
+	border-top: solid 1px #e6e6e6;
+	border-bottom: solid 1px #c9c9c9;
+	background-color: #fff;	
+	background-image: url(../imagens/banner/fundo-li.jpg);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	text-decoration: none;
+}
+
+.sMenu-navegacao li a {
+	text-decoration: none;	
+	color: #666;
+}
+
+.sMenu-navegacao li.liHover {
+	background-image: url(../imagens/banner/fundo-li-hover.jpg);
+	background-position: bottom left;
+	background-repeat: repeat-x;	
+}
+
+.sMenu-navegacao li h2 a {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.sMenu-navegacao li.liHover a {
+	color: #12006b;	
+}
+
+.sMenu-navegacao li p {
+	color: #666;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.sMenu-navegacao li.sMenu-ativo {
+	background-image: url(../imagens/banner/fundo-li-active.jpg);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	text-decoration: none;
+	cursor: default;
+	border-top: solid 1px #0d0143;
+}
+
+.sMenu-navegacao li.sMenu-ativo a {
+	color: #f5cc00;
+}
+
+.sMenu-navegacao li.sMenu-ativo p {
+	color: #fff;
+}
