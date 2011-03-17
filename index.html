@@ -5,24 +5,54 @@
 	<title></title>
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   	<meta name="author" content =""/> 
-   	<meta name="description" content=""/> 
-   	<meta name="keywords" content=""/> 
-   	<meta http-equiv="content-language" content="pt"/> 
+	<meta name="author" content =""/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta http-equiv="content-language" content="pt"/>
+
+	<link rel="canonical" href="http://www.balter.com.br/jquery/banner/" />
 
 	<link href="css/banner.css" rel="stylesheet" type="text/css" />	
    	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="sliderMenu.min.js"></script>
-	<script type="text/javascript">
-	jQuery(function($) {
-		$('.slideMenu').sliderMenu();
-	});
-	</script>
+
 	
+
 	<style>
+		/* Estilo da página de exemplo - você precisa apenas do css/banner.css */
 	* { margin:0; padding:0; }
 	body { font-family: Helvetica; }
+	#container { margin-top: 10px }
+	#info { width:960px; margin: 10px auto; background: #eee; padding:5px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; color: navy;}
+	#info dl {
+	    background: #eee
+	}
+
+	#info > p {
+		margin-bottom: 4px;
+		font-size:12px;
+	}
+
+	#info dt, #info h2 {
+		font-size:14px;
+		line-height:14px;
+		margin-top:10px;
+		font-weight:700;
+	}
+
+	#info dl > * {
+		margin-left:20px;
+		display:inline-block;
+	}
+
+	#info dd {
+		font-size:12px;
+	}
+
+	#info a {
+		color: CadetBlue;
+	}
 	</style>
 </head>
 <body>
@@ -70,7 +100,28 @@
 				<img src="imagens/banner/imagem-8.jpg" title="Titulo da Imagem" alt="Banner" />
 			</li>
 		</ul>
+		<div id="info">
+			<h2>Faça download do plugin</h2>
+			<p>Para fazer download vá no link: <a href="http://www.balter.com.br/jquery/banner/sliderMenu.zip" title="download do sliderMenu">http://www.balter.com.br/jquery/banner/sliderMenu.zip</a></p>
+			<p>Você também pode baixar e colaborar via github: <a href="https://github.com/leobalter/sliderMenu" rel="nofollow" title="sliderMenu no Github">https://github.com/leobalter/sliderMenu</a> </p>
+			<h2>Leia mais sobre o plugin</h2>
+			<p>Para ler mais sobre o plugin: <a href="http://leobalter.net/desenvolvimento/slidermenu-plugin-de-jquery-para-banner-de-site-com-listagem-de-artigos/">Link</a></p>
+			<h2>Fale com os desenvolvedores do plugin:</h2>
+			<dl>
+				<dt>Leo Balter</dt>
+				<dd><a href="http://leobalter.net/">Site</a></dd>
+				<dd><a href="http://twitter.com/leobalter">Twitter</a></dd>
+				<dt>Vitor Leal</dt>
+				<dd><a href="http://www.vitorleal.com/">Site</a></dd>
+				<dd><a href="http://twitter.com/vitorleal">Twitter</a></dd>
+			</dl>
+		</div>
 	</div>
+	<script type="text/javascript">
+	jQuery(function($) {
+		$('.slideMenu').sliderMenu();
+	});
+	</script>
 	<script type="text/javascript">
 	
   var _gaq = _gaq || [];
